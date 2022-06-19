@@ -1,10 +1,16 @@
 module.exports = {
   themeConfig: {
-    logo: '/assets/img/icon-bell.png',
+    lastUpdated: '上次更新',
+    logo: '/assets/img/home.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'about', link: '/about' },
-      { text: 'External', link: 'https://google.com' },
-    ]
+      { text: '主页', link: '/' },
+      { text: '关于我', link: '/about/aboutMe' },
+    ],
+    sidebar: {
+      '/about/': [
+        ['aboutMe','关于我'],
+        ['aboutindex','aboutindex的东西'],
+      ],
+    }
   }
 }
