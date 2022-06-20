@@ -6,6 +6,7 @@ module.exports = {
       { text: '主页', link: '/' },
       { text: '关于我', link: '/about/aboutMe' },
       { text: '我的前端历程', link: '/myWeb/myWeb' },
+      { text: '我的项目', link: '/myProject/myProject' },
     ],
     sidebar: {
       '/about/': [
@@ -13,6 +14,9 @@ module.exports = {
       ],
       '/myWeb/': [
         ['myWeb', '我的前端历程'],
+      ],
+      '/myProject/': [
+        ['myProject', '我的项目'],
       ],
     },
   },
