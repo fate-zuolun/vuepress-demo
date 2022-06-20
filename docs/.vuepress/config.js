@@ -23,5 +23,6 @@ module.exports = {
         theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16']
       }
     ],
+    ['@vuepress/back-to-top'],
   ]
 }
