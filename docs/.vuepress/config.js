@@ -6,7 +6,7 @@ module.exports = {
       { text: '主页', link: '/' },
       { text: '关于我', link: '/about/aboutMe' },
       { text: '我的前端历程', link: '/myWeb/myWeb' },
-      { text: '我的项目', link: '/myProject/myProject' },
+      { text: '我的项目', link: '/myProject/uniWangYiYun' },
     ],
     sidebar: {
       '/about/': [
@@ -16,7 +16,10 @@ module.exports = {
         ['myWeb', '我的前端历程'],
       ],
       '/myProject/': [
-        ['myProject', '我的项目'],
+        {
+          title: '我的项目',  //组名
+          children: ['uniWangYiYun', 'eleWangYiYun'],   //该分组下要显示的文件的目录
+        }
       ],
     },
   },
@@ -28,5 +31,11 @@ module.exports = {
       }
     ],
     ['@vuepress/back-to-top'],
+    ["vuepress-plugin-nuggets-style-copy", {
+      copyText: "复制代码",
+      tip: {
+        content: "复制成功"
+      }
+    }]
   ]
 }
