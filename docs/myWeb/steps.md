@@ -1,4 +1,4 @@
 # 我的前端历程
 <ClientOnly>
-  <my-demo/>
+  <steps/>
 </ClientOnly>

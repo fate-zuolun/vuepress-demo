@@ -5,7 +5,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       { text: '关于我', link: '/about/aboutMe' },
-      { text: '我的前端历程', link: '/myWeb/myWeb' },
+      { text: '我的前端历程', link: '/myWeb/Introduction' },
       { text: '我的项目', link: '/myProject/uniWangYiYun' },
     ],
     sidebar: {
@@ -13,7 +13,10 @@ module.exports = {
         ['aboutMe', '关于我'],
       ],
       '/myWeb/': [
-        ['myWeb', '我的前端历程'],
+        {
+          title: '我的前端历程',  //组名
+          children: ['Introduction','steps'],   //该分组下要显示的文件的目录
+        }
       ],
       '/myProject/': [
         {
