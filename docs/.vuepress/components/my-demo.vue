@@ -1,21 +1,46 @@
 <template>
-  <div>
-    <el-button type="success">按钮</el-button>
-    <button @click="change">{{buttonName}}</button>
+  <div style="height: 600px">
+    <el-steps direction="vertical" :active="5">
+      <el-step title="步骤 1"></el-step>
+      <el-step title="步骤 2"></el-step>
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+      <el-step
+        title="步骤 3"
+        description="这是一段很长很长很长的描述性文字"
+      ></el-step>
+    </el-steps>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      buttonName: "点击按钮"
-    };
+    return {};
   },
-  methods: {
-    change() {
-      console.log(111);
-    }
-  }
+  methods: {},
 };
 </script>
