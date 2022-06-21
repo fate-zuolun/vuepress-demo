@@ -1,2 +1,2 @@
 # 关于我
-<Vssue :title="1" />
+<Vssue title="aboutMe" />

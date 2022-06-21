@@ -47,7 +47,8 @@ module.exports = {
         repo: 'vuepressCommon',
         clientId: '7a825c464c53a6407f75',
         clientSecret: 'ce643ea984fda091c8b0b7c0893a609461969678',
-        locale:'zh'
+        locale:'zh',
+        autoCreateIssue: true,//自动创建评论
       },
     ]
   ]
