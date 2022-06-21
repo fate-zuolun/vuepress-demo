@@ -15,7 +15,7 @@ module.exports = {
       '/myWeb/': [
         {
           title: '我的前端历程',  //组名
-          children: ['Introduction','steps'],   //该分组下要显示的文件的目录
+          children: ['Introduction', 'steps'],   //该分组下要显示的文件的目录
         }
       ],
       '/myProject/': [
@@ -39,6 +39,16 @@ module.exports = {
       tip: {
         content: "复制成功"
       }
-    }]
+    }],
+    [
+      '@vssue/vuepress-plugin-vssue', {
+        platform: 'github',
+        owner: 'CuiChengweb',
+        repo: 'vuepressCommon',
+        clientId: '7a825c464c53a6407f75',
+        clientSecret: 'ce643ea984fda091c8b0b7c0893a609461969678',
+        locale:'zh'
+      },
+    ]
   ]
 }
