@@ -16,5 +16,8 @@
     "vuepress": "^1.9.7",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.15.9"
+  }
 }

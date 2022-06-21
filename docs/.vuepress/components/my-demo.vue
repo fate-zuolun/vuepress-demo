@@ -1,5 +1,6 @@
 <template>
   <div>
+    <el-button type="success">按钮</el-button>
     <button @click="change">{{buttonName}}</button>
   </div>
 </template>

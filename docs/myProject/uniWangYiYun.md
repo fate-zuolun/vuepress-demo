@@ -14,9 +14,9 @@
 ## 项目启动教程
 1. 下载HBuilderX编译器，点击运行到浏览器即可看见（推荐使用该方法）
 
-2. 其他编译器则用传统的运行方法：npm run serve:%PLATFORM%，
-  %PLATFORM% 可取值如下：
-  | 值         | 平台    |
+2. 其他编译器则用传统的运行方法：npm run serve:%PLATFORM% , %PLATFORM% 可取值如下：
+
+| 值         | 平台    |
 |-----------|-------|
 | h5        | H5    |
 | mp-weixin | 微信小程序 |
