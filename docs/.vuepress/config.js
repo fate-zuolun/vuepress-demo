@@ -1,7 +1,8 @@
 module.exports = {
+  title: '崔城的小站',
   themeConfig: {
     lastUpdated: '上次更新',
-    logo: '/assets/img/home.png',
+    // logo: '/assets/img/home.png',
     nav: [
       { text: '主页', link: '/' },
       { text: '关于', link: '/about/aboutMe' },
@@ -11,7 +12,8 @@ module.exports = {
     sidebar: {
       '/about/': [
         {
-          title:'关于'
+          title: '关于',
+          children: ['aboutMe']
         }
       ],
       '/myWeb/': [
@@ -33,8 +35,8 @@ module.exports = {
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
       {
         theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
-        messages:{
-          welcome: '欢迎来到崔城的小站',home: '心里的花，我想要带你回家。', theme: '好吧，希望你能喜欢我的其他小伙伴。', close: '你知道我喜欢吃什么吗？痴痴地望着你。' 
+        messages: {
+          welcome: '欢迎来到崔城的小站', home: '心里的花，我想要带你回家。', theme: '好吧，希望你能喜欢我的其他小伙伴。', close: '你知道我喜欢吃什么吗？痴痴地望着你。'
         }
       }
     ],
@@ -52,7 +54,7 @@ module.exports = {
         repo: 'vuepressCommon',
         clientId: '7a825c464c53a6407f75',
         clientSecret: 'ce643ea984fda091c8b0b7c0893a609461969678',
-        locale:'zh',
+        locale: 'zh',
         autoCreateIssue: true,//自动创建评论
       },
     ]

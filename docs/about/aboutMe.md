@@ -1,6 +1,7 @@
+# 崔城  /  Stage Name
+
 <img src="/assets/img/headPortrait.jpg" width="64px;" height="64px;">
 
-<!-- # 崔城  /  Stage Name -->
 ## 关于作者
 - 练习时长两年半的前端开发（笑）
 - 老二次元，现在不怎么看番了
