@@ -10,6 +10,7 @@ module.exports = {
   title: '崔城的小站',
   theme: 'reco',
   themeConfig: {
+    mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
     authorAvatar: '/assets/img/headPortrait.jpg',
     type: 'blog',
     subSidebar: 'auto',
