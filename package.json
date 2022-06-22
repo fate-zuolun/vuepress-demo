@@ -16,7 +16,8 @@
     "sass": "^1.26.5",
     "sass-loader": "^10.0.4",
     "vuepress": "^1.9.7",
-    "vuepress-plugin-nuggets-style-copy": "^1.0.3"
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-theme-reco": "^1.6.13"
   },
   "dependencies": {
     "@vssue/api-github-v3": "^1.4.7",

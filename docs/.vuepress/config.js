@@ -1,9 +1,16 @@
 module.exports = {
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   head: [
     ['link', { rel: 'icon', href: '/assets/img/home.png' }]
   ],
   title: '崔城的小站',
+  theme: 'reco',
   themeConfig: {
+    subSidebar: 'auto',
     lastUpdated: '上次更新',
     // logo: '/assets/img/home.png',
     nav: [
