@@ -4,13 +4,15 @@ module.exports = {
     logo: '/assets/img/home.png',
     nav: [
       { text: '主页', link: '/' },
-      { text: '关于我', link: '/about/aboutMe' },
+      { text: '关于', link: '/about/aboutMe' },
       { text: '我的前端历程', link: '/myWeb/Introduction' },
       { text: '我的项目', link: '/myProject/uniWangYiYun' },
     ],
     sidebar: {
       '/about/': [
-        ['aboutMe', '关于我'],
+        {
+          title:'关于'
+        }
       ],
       '/myWeb/': [
         {
@@ -30,7 +32,10 @@ module.exports = {
     [
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
       {
-        theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16']
+        theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+        messages:{
+          welcome: '欢迎来到崔城的小站',home: '心里的花，我想要带你回家。', theme: '好吧，希望你能喜欢我的其他小伙伴。', close: '你知道我喜欢吃什么吗？痴痴地望着你。' 
+        }
       }
     ],
     ['@vuepress/back-to-top'],

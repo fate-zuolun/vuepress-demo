@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 崔城的个人博客
+heroText: 崔城的小站
 tagline: 记录我的前端开发的琐碎事
 actionText: 一起探索吧 →
 actionLink: /about/aboutMe
