@@ -1,13 +1,23 @@
 module.exports = {
+  head: [
+    ['link', { rel: 'icon', href: '/assets/img/home.png' }]
+  ],
   title: '崔城的小站',
   themeConfig: {
     lastUpdated: '上次更新',
     // logo: '/assets/img/home.png',
     nav: [
       { text: '主页', link: '/' },
-      { text: '关于', link: '/about/aboutMe' },
       { text: '我的前端历程', link: '/myWeb/Introduction' },
       { text: '我的项目', link: '/myProject/uniWangYiYun' },
+      { text: '关于', link: '/about/aboutMe' },
+      {
+        text: '友情链接',
+        items: [
+          { text: 'Gitee', link: 'https://gitee.com/bestcuicheng' },
+          { text: 'Github', link: 'https://github.com/CuiChengweb' }
+        ]
+      }
     ],
     sidebar: {
       '/about/': [
