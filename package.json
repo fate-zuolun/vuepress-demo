@@ -16,6 +16,7 @@
     "sass": "^1.26.5",
     "sass-loader": "^10.0.4",
     "vuepress": "^1.9.7",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
     "vuepress-theme-reco": "^1.6.13"
   },
@@ -23,6 +24,7 @@
     "@vssue/api-github-v3": "^1.4.7",
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "async-validator": "^1.11.5",
-    "element-ui": "^2.15.9"
+    "element-ui": "^2.15.9",
+    "vuepress-plugin-ribbon-animation": "^1.1.3"
   }
 }
