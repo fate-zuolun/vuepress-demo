@@ -10,6 +10,20 @@ module.exports = {
   title: '崔城的小站',
   theme: 'reco',
   themeConfig: {
+    blogConfig: {
+      category: {
+        location: 2,     // 在导航栏菜单中所占的位置，默认2
+        text: 'Category' // 默认文案 “分类”
+      },
+      tag: {
+        location: 3,     // 在导航栏菜单中所占的位置，默认3
+        text: '标签'      // 默认文案 “标签”
+      },
+      socialLinks: [     // 信息栏展示社交信息
+        { link: 'https://gitee.com/bestcuicheng', icon: 'reco-mayun' },
+        { link: 'https://github.com/CuiChengweb', icon: 'reco-github' }
+      ]
+    },
     mode: 'dark', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
     authorAvatar: '/assets/img/headPortrait.jpg',
     type: 'blog',
@@ -126,12 +140,48 @@ module.exports = {
     [
       'dynamic-title',
       {
-        //  showIcon: '/favicon.ico',
-         showText: '(/≧▽≦/)咦！又好了！',
-        //  hideIcon: '/failure.ico',
-         hideText: '(●—●)喔哟，崩溃啦！',
-         recoverTime: 2000,
+        showText: '(/≧▽≦/)咦！又好了！',
+        hideText: '(●—●)喔哟，崩溃啦！',
+        recoverTime: 2000,
       },
-   ],
+    ],
+    [
+      '@vuepress-reco/vuepress-plugin-bgm-player',
+      {
+        autoShrink:true,
+        autoplay:true,
+        audios: [
+          {
+            name: '亲爱的旅人啊',
+            artist: '周深',
+            url: '/music/亲爱的旅人啊.mp3',
+            cover: 'http://p1.music.126.net/1YrCPOBV314i-mTtlDg8mQ==/109951164148664637.jpg?param=130y130'
+          },
+          {
+            name: '起风了',
+            artist: '买辣椒也用券',
+            url: '/music/起风了.mp3',
+            cover: 'http://p2.music.126.net/diGAyEmpymX8G7JcnElncQ==/109951163699673355.jpg?param=130y130'
+          },
+          {
+            name: '去年夏天',
+            artist: '王大毛',
+            url: '/music/去年夏天.mp3',
+            cover: 'http://p2.music.126.net/PWbmJl6Rz5YCKt0rBK_2ag==/109951167521694242.jpg?param=130y130'
+          },
+          {
+            name: '小幸运',
+            artist: '田馥甄',
+            url: '/music/小幸运.mp3',
+          },
+          {
+            name: '追光者',
+            artist: '岑宁儿',
+            url: '/music/追光者.mp3',
+            cover: 'http://p2.music.126.net/ZZAQGWl9mR7g5xCyWWH3Pw==/19149094509535913.jpg?param=130y130'
+          },
+        ]
+      }
+    ]
   ]
 }

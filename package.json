@@ -23,6 +23,7 @@
   "dependencies": {
     "@vssue/api-github-v3": "^1.4.7",
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
     "async-validator": "^1.11.5",
     "element-ui": "^2.15.9",
     "vuepress-plugin-ribbon-animation": "^1.1.3"
