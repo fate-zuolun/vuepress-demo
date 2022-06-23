@@ -32,6 +32,7 @@ module.exports = {
       { text: '主页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       { text: '关于', link: '/about/aboutMe', icon: 'reco-account' },
+      { text: '留言版', link: '/messageBoard/messageBoard', icon: 'reco-message' },
       {
         text: '友情链接',
         items: [
@@ -41,12 +42,6 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/about/': [
-        {
-          title: '关于',
-          children: ['aboutMe']
-        }
-      ],
       '/myWeb/': [
         {
           title: '我的前端历程',  //组名
