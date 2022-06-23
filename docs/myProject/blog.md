@@ -13,6 +13,9 @@ tags:
 
   [1]: https://gitee.com/bestcuicheng/vuepress
 
+## 介绍
+1. 本项目是基于Vuepress开发的个人博客，使用的主题是vuepress-theme-reco
+
 ## 项目启动教程
   1. 首先，先执行以下命令下载项目
   ```
