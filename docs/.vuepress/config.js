@@ -51,7 +51,7 @@ module.exports = {
       '/myProject/': [
         {
           title: '我的项目',  //组名
-          children: ['uniWangYiYun', 'eleWangYiYun'],   //该分组下要显示的文件的目录
+          children: ['uniWangYiYun', 'eleWangYiYun','blog'],   //该分组下要显示的文件的目录
         }
       ],
     },
