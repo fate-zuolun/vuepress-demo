@@ -2,6 +2,8 @@
 title: electron开发网易云桌面应用 
 author: 崔城
 date: '2022-06-22'
+categories:
+ - 个人生活
 tags:
  - 我的项目
 ---

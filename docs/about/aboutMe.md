@@ -2,6 +2,10 @@
 title: 关于我
 author: 崔城
 date: '2022-06-22'
+categories:
+ - 个人生活
+sticky:
+ - 2
 tags:
  - 杂谈
 ---

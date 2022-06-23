@@ -10,14 +10,13 @@ module.exports = {
   title: '崔城的小站',
   theme: 'reco',
   themeConfig: {
+    logo: '/assets/img/headPortrait.jpg',
     blogConfig: {
       category: {
-        location: 2,     // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认文案 “分类”
+        location: 2,
       },
       tag: {
-        location: 3,     // 在导航栏菜单中所占的位置，默认3
-        text: '标签'      // 默认文案 “标签”
+        location: 3,
       },
       socialLinks: [     // 信息栏展示社交信息
         { link: 'https://gitee.com/bestcuicheng', icon: 'reco-mayun' },
@@ -31,8 +30,7 @@ module.exports = {
     lastUpdated: '上次更新',
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
-      { text: '我的前端历程', link: '/myWeb/Introduction', icon: 'reco-message' },
-      { text: '我的项目', link: '/myProject/uniWangYiYun', icon: 'reco-blog' },
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       { text: '关于', link: '/about/aboutMe', icon: 'reco-account' },
       {
         text: '友情链接',
