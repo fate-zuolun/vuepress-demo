@@ -31,6 +31,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+      { text: '小工具', link: '/Gadgets/Gadgets', icon: 'reco-eye' },
       { text: '关于', link: '/about/aboutMe', icon: 'reco-account' },
       { text: '留言版', link: '/messageBoard/messageBoard', icon: 'reco-message' },
       {
