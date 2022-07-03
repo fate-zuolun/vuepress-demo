@@ -1,18 +1,18 @@
 ---
-title: 使用express编写后台接口一
+title: 使用express编写后台接口
 author: 崔城
 date: '2022-06-29'
 categories:
- - 发现的问题
+ - 教程
 tags:
- - 问题
+ - 教程
 ---
 # 使用express编写后台get接口
 
 ## 安装express-generator生成器
 
 ```
-cnpm install -g express-generator
+npm install -g express-generator --registry=https://registry.npm.taobao.org
 ```
 
 ## 通过生成器创建项目
@@ -30,7 +30,7 @@ cd serverAPI
 ## 下载所需依赖
 
 ```
-cnpm install
+npm install --registry=https://registry.npm.taobao.org
 ```
 
 ## 运行项目

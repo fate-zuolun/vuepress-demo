@@ -32,7 +32,7 @@ module.exports = {
       { text: '主页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       { text: '小工具', link: '/Gadgets/Gadgets', icon: 'reco-eye' },
-      { text: '关于', link: '/about/aboutMe', icon: 'reco-account' },
+      { text: '关于', link: '/myWeb/aboutMe', icon: 'reco-account' },
       { text: '留言版', link: '/messageBoard/messageBoard', icon: 'reco-message' },
       {
         text: '友情链接',
@@ -43,16 +43,28 @@ module.exports = {
       }
     ],
     sidebar: {
+      '/course/': [
+        {
+          title: '教程',  //组名
+          children: ['express', 'ngrx'],
+        }
+      ],
+      '/question/': [
+        {
+          title: '发现的问题',  //组名
+          children: ['electronBuilder', 'git'],
+        }
+      ],
       '/myWeb/': [
         {
-          title: '我的前端历程',  //组名
-          children: ['Introduction', 'steps'],   //该分组下要显示的文件的目录
+          title: '个人生活',  //组名
+          children: ['Introduction', 'steps','aboutMe'],
         }
       ],
       '/myProject/': [
         {
-          title: '我的项目',  //组名
-          children: ['uniWangYiYun', 'eleWangYiYun','blog'],   //该分组下要显示的文件的目录
+          title: '个人项目',
+          children: ['uniWangYiYun', 'eleWangYiYun','blog'],
         }
       ],
     },
