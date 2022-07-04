@@ -46,7 +46,7 @@ module.exports = {
       '/course/': [
         {
           title: '教程',  //组名
-          children: ['express', 'ngrx'],
+          children: ['express', 'ngrx', 'react'],
         }
       ],
       '/question/': [
@@ -58,13 +58,13 @@ module.exports = {
       '/myWeb/': [
         {
           title: '个人生活',  //组名
-          children: ['Introduction', 'steps','aboutMe'],
+          children: ['Introduction', 'steps', 'aboutMe'],
         }
       ],
       '/myProject/': [
         {
           title: '个人项目',
-          children: ['uniWangYiYun', 'eleWangYiYun','blog'],
+          children: ['uniWangYiYun', 'eleWangYiYun', 'blog'],
         }
       ],
     },
@@ -154,8 +154,8 @@ module.exports = {
     [
       '@vuepress-reco/vuepress-plugin-bgm-player',
       {
-        autoShrink:true,
-        autoplay:true,
+        autoShrink: true,
+        autoplay: true,
         audios: [
           {
             name: '亲爱的旅人啊',
