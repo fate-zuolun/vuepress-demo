@@ -1,24 +1,22 @@
 ---
 title: Electron-Builder打包时报错could not find :C:\Users\XX\AppData\Local\Temp\t-bDWVX6\0-messages.nsh
 author: 崔城
-date: '2022-06-28'
+date: "2022-06-28"
 categories:
- - 发现的问题
+  - 发现的问题
 tags:
- - 问题
+  - 问题
 ---
-
-
 
 ## 项目情况
 
-项目基于VUE，使用VUE-cli 3创建，然后执行
+项目基于 VUE，使用 VUE-cli 3 创建，然后执行
 
 ```powershell
 vue add electron-builder
 ```
 
-添加Electron-Builder
+添加 Electron-Builder
 
 ## 问题描述
 
@@ -90,20 +88,20 @@ npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\{我的windows账户名}\AppData\Roaming\npm-cache\_logs\2020-12-16T05_39_35_234Z-debug.log
 ```
 
-从错误日志上来看，产生此错误的原因是，nsis插件找不到了。但是我打开对应目录，很明显，nsis是存在的。然后我发现一个关键点，那就是路径中出现了乱码
+从错误日志上来看，产生此错误的原因是，nsis 插件找不到了。但是我打开对应目录，很明显，nsis 是存在的。然后我发现一个关键点，那就是路径中出现了乱码
 
 ```powershell
 Processing config: C:\Users\��\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1\nsisconf.nsh
 ```
 
-显然，是因为我的windows账户名是中文，但是在打包过程中，有某些插件不能正确识别中文导致的。
-问题的根源已经找到了。怎么办呢。别人出现这个问题，都是项目名称或者路径里出现了中文，改掉就是了，我这个是AppData文件夹路径出现中文，怎么改？
+显然，是因为我的 windows 账户名是中文，但是在打包过程中，有某些插件不能正确识别中文导致的。
+问题的根源已经找到了。怎么办呢。别人出现这个问题，都是项目名称或者路径里出现了中文，改掉就是了，我这个是 AppData 文件夹路径出现中文，怎么改？
 
 处理办法我想到了以下几个
 
-经过一系列的baidu，google，bing。终于，在一篇博文中发现了解决方案。
+经过一系列的 baidu，google，bing。终于，在一篇博文中发现了解决方案。
 
-打开 node_module/app-builder-lib/out/targets/nsis/NsisTarget.js文件，在 executeMakensis 方法中加入我们所需的参数。
+打开 node_module/app-builder-lib/out/targets/nsis/NsisTarget.js 文件，在 executeMakensis 方法中加入我们所需的参数。
 
 ```js
 
@@ -124,5 +122,3 @@ async executeMakensis(defines, commands, script) {
 ```
 
 经测试，问题完美解决
-
-
