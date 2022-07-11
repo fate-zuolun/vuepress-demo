@@ -21,4 +21,4 @@
    npm run docs:dev
   ```
 
-  4. 启动完成后，打开http://localhost:8080/，看到主页
+  4. 启动完成后，打开 http://localhost:8080/ 看到主页
