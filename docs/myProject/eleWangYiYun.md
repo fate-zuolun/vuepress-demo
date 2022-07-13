@@ -42,5 +42,10 @@ tags:
 
   4. 打包完成之后，进入dist文件里面，找到安装包，安装即可，安装完以后，就可运行项目了
 
+## 项目master分支和2.0分支的区别
+
+  1. 所采用的技术不同，master分支使用的是vue2.6的语法进行项目开发的，2.0分支，尝试了使用vue3.0+setup语法进行开发，但因为感觉vue2.6升级到vue3.0太
+     过于繁琐，遂使用了`unplugin-vue2-script-setup`和`@vue/composition-api`这两个库，让vue2的项目支持composition-api和setup语法
+
   <Vssue title="eleWangYiYun" />
     
