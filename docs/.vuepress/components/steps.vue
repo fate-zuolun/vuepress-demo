@@ -27,7 +27,7 @@
           description="这是一段很长很长很长的描述性文字"
         ></el-step>
         <el-step
-          title="2020.12-2021.06"
+          title="2020.09-2021.06"
           description="这是一段很长很长很长的描述性文字"
         ></el-step>
         <el-step
