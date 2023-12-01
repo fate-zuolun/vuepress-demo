@@ -52,7 +52,7 @@ module.exports = {
       '/question/': [
         {
           title: '发现的问题',  //组名
-          children: ['electronBuilder','electronQuestion', 'git'],
+          children: ['electronBuilder','compatibilityIssues','electronQuestion', 'git'],
         }
       ],
       '/myWeb/': [
