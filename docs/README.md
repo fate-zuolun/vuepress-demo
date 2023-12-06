@@ -1,13 +1,13 @@
 ---
 home: true
-heroText: 崔城的小站
-tagline: 记录我的前端开发的琐碎事
+heroText: w行列式的博客
+tagline: 生如蝼蚁当立鸿鹄之志,命薄如纸应有不屈之心
 ---
 
 <!-- 向下跳转的style -->
 <style>
 body{
-  background-image: url(/assets/img/gifimg.gif);
+  /* background-image: url(/assets/img/gifimg.gif); */
 }
 .anchor-down {
   display: block;
@@ -76,4 +76,3 @@ export default {
   }
 }
 </script>
-
